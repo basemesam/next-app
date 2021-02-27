@@ -1,0 +1,45 @@
+.home {
+  display: flex;
+  padding: 0 80px;
+}
+.content {
+  width: 50%;
+  padding: 20px 40px;
+  background-color: #eee;
+}
+.sidebar {
+  width: 25%;
+  height: 100vh;
+  background-color: #fff;
+}
+.scrolled {
+  position: sticky;
+  top: 20px;
+  left: 0;
+}
+.layout {
+  background-color: #eee;
+}
+
+@media (max-width: 767px) {
+  .home {
+    padding: 0 15px;
+  }
+  .content {
+    width: 100%;
+    padding: 20px 0;
+  }
+  .sidebar {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .sidebar {
+    display: none;
+  }
+  .content {
+    width: 100%;
+    padding: 20px 0;
+  }
+}
